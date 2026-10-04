@@ -60,14 +60,14 @@
     "href": "index.html#hello",
     "title": "Takahiro Hikida",
     "section": "Hello",
-    "text": "Hello\nI am a researcher working at the intersection of computational fluid dynamics and scientific computing. My current focus is on writing solvers from scratch — discretizing the governing equations myself, rather than treating a simulation package as a black box, so that every numerical choice is something I can defend.\n\n計算流体力学と科学計算の境界領域で研究しています。いまの関心は、ソルバーを一から書くこと。 シミュレーションパッケージをブラックボックスとして使うのではなく、支配方程式の離散化を自分の手で行い、 数値的な選択のひとつひとつを自分の言葉で説明できる状態を目指しています。"
+    "text": "Hello\nI am a mechanical engineering student at Washington University in St. Louis, with a background in physics. Outside of coursework, I am writing solvers from scratch — discretizing the governing equations myself, rather than treating a simulation package as a black box, so that every numerical choice is something I can defend.\n\nワシントン大学セントルイス校で機械工学を学んでいます（バックグラウンドは物理学）。授業の外では、ソルバーを一から書いています。 シミュレーションパッケージをブラックボックスとして使うのではなく、支配方程式の離散化を自分の手で行い、 数値的な選択のひとつひとつを自分の言葉で説明できる状態を目指しています。"
   },
   {
     "objectID": "index.html#where-to-go-next",
     "href": "index.html#where-to-go-next",
     "title": "Takahiro Hikida",
     "section": "Where to go next",
-    "text": "Where to go next\n\nProjects — what I am building right now.\nAbout — background, and a downloadable CV.\n\n\n\nProjects — 現在取り組んでいるもの\nAbout — 経歴と CV"
+    "text": "Where to go next\n\nProjects — what I am building right now.\nAbout — education, experience, skills, and a downloadable CV.\n\n\n\nProjects — 現在取り組んでいるもの\nAbout — 学歴・職歴・スキルと CV"
   },
   {
     "objectID": "projects.html",
@@ -88,27 +88,48 @@
     "href": "about.html#background",
     "title": "About",
     "section": "Background",
-    "text": "Background\nI work on computational fluid dynamics and scientific computing, with a particular interest in writing numerical methods from first principles — understanding a scheme well enough to implement, break, and fix it.\n\n計算流体力学と科学計算を専門としています。数値解法を原理から理解し、 自分で実装し、壊し、直せる状態にすることに関心があります。"
+    "text": "Background\nI am a mechanical engineering student at Washington University in St. Louis (B.S. and M.S.), coming from a physics background at Whitman College. My experience spans experimental physics — optical interferometry and vibration analysis — as well as software engineering and business analysis in industry. On the side, I am writing numerical solvers from first principles, starting with a lid-driven cavity flow solver.\n\nワシントン大学セントルイス校で機械工学（学士・修士）を学んでいます。前籍の Whitman College では物理学を専攻しました。光干渉計測や振動解析といった実験物理に加え、 企業でのソフトウェア開発やビジネス分析の経験があります。また個人で、 キャビティ流れのソルバーをはじめ、 数値ソルバーを原理から実装しています。"
   },
   {
     "objectID": "about.html#education",
     "href": "about.html#education",
     "title": "About",
     "section": "Education",
-    "text": "Education\n\n\n\n\n\n\n\nPeriod\nDegree / Institution\n\n\n\n\n20XX–present\nWashington University in St. Louis\n\n\n20XX–20XX\nB.Sc., your university\n\n\n\n\n※ 年次・学位・所属は仮置きです。実際の経歴に差し替えてください。"
+    "text": "Education\n\n\n\n\n\n\n\nPeriod\nDegree / Institution\n\n\n\n\nExpected May 2029\nM.S. in Mechanical Engineering, Washington University in St. Louis\n\n\nExpected May 2028\nB.S. in Mechanical Engineering, minor in Statistics, Washington University in St. Louis\n\n\n2023–2026\nB.A. in Physics, minor in Economics, Whitman College, Walla Walla, WA (degree conferral expected May 2028; GPA 3.81/4.0, magna cum laude)"
   },
   {
-    "objectID": "about.html#research-interests",
-    "href": "about.html#research-interests",
+    "objectID": "about.html#experience",
+    "href": "about.html#experience",
     "title": "About",
-    "section": "Research interests",
-    "text": "Research interests\n\nIncompressible flow solvers (projection / fractional-step methods)\nNumerical linear algebra for large sparse systems\nReproducible scientific computing workflows\n\n\n\n非圧縮流れのソルバー（射影法・分数ステップ法）\n大規模疎行列に対する数値線形代数\n再現性のある科学計算ワークフロー"
+    "section": "Experience",
+    "text": "Experience\n\nBusiness Development and Analysis Intern — CADDi Inc.\nTokyo, Japan · Summer 2026\n\nAnalyzed bottlenecks in the manufacturing industry — supply chains, miscommunication between sectors, and the resulting waste of resources and time.\nDesigned a new business plan, including cost and revenue analysis, and presented it to the company’s management.\n\n\n\n製造業におけるボトルネック（サプライチェーン、部門間のコミュニケーション不全、 それに伴う資源と時間の浪費）を分析。\nコスト・収益分析を含む新規事業計画を立案し、経営陣にプレゼンテーション。\n\n\n\n\nSoftware Engineer Intern — GA Technologies\nTokyo, Japan · Summer 2026\n\nCoded 3 new projects for software supporting M&A processes; debugged code based on daily feedback.\nPrototyped cost and customer analysis models in Ruby, R, and Python.\n\n\n\nM&A プロセスを支援するソフトウェアで、新規プロジェクト 3 件の開発を担当。 日々のフィードバックをもとにデバッグを行う。\nRuby・R・Python でコスト分析・顧客分析モデルのプロトタイプを作成。\n\n\n\n\nESPI Lab Research Assistant — Whitman College\nWalla Walla, WA · Summer 2025\n\nUsed wave interference to analyze microscopic vibrations of acoustic instruments.\nOptimized the lab’s ESPI (Electronic Speckle Pattern Interferometry) setup by calculating the optimal oscillation frequency and amplitude of a piezo-attached mirror.\nProcessed 1,000+ data points and images in LabVIEW, comparing theoretical predictions with experimental results; identified resonance frequencies and vibration mode patterns of instruments such as violas and pianos.\nAuthored a 10-page technical report with error analysis and conclusions, and presented the findings.\n\n\n\n波の干渉を利用して、楽器の微小振動を解析。\nピエゾ素子付きミラーの最適な振動周波数・振幅を計算し、研究室の ESPI（電子スペックルパターン干渉法）装置を最適化。\nLabVIEW で 1,000 点以上のデータと画像を処理し、理論予測と実験結果を比較。 ヴィオラやピアノなどの共振周波数と振動モードを特定。\n誤差解析と結論をまとめた 10 ページの技術レポートを執筆し、成果を発表。\n\n\n\n\nJapanese Tutor — Whitman College\nWalla Walla, WA · 09/2024 – 05/2026\n\nTutored 20+ students in spoken Japanese and in building an intuitive understanding of complex grammar.\nTook part in cultural exchange events, volunteering in a sister-city high school exchange program.\n\n\n\n20 名以上の学生に、日本語の会話練習と文法の直感的な理解をサポート。\n文化交流イベントに参加し、姉妹都市の高校交流プログラムでボランティア。"
+  },
+  {
+    "objectID": "about.html#leadership",
+    "href": "about.html#leadership",
+    "title": "About",
+    "section": "Leadership",
+    "text": "Leadership\n\nMen’s Soccer — Whitman College\nWalla Walla, WA · 09/2023 – 11/2025\n\nPlayed NCAA Division III varsity soccer, balancing 20+ hours per week of practice, travel, and games with a full academic course load.\nWon the Northwest Conference and qualified for the NCAA D3 Men’s Soccer National Tournament in the 2025/26 season.\n\n\n\nNCAA Division III のサッカー部でプレー。週 20 時間以上の練習・遠征・試合と学業を両立。\n2025/26 シーズンに Northwest Conference で優勝し、NCAA D3 全国大会に出場。"
+  },
+  {
+    "objectID": "about.html#skills",
+    "href": "about.html#skills",
+    "title": "About",
+    "section": "Skills",
+    "text": "Skills\n\nProgramming & software: Python, R, Ruby, LabVIEW, NI MAX, Microsoft Office Suite\nLaboratory — physics: interferometry (ESPI), laser alignment, optical setup optimization, acoustic excitation, circuit design and assembly, oscilloscope operation\nLaboratory — chemistry: basic wet chemistry, titration techniques\nLanguages: Japanese (native), English (professional), German (elementary)\n\n\n\nプログラミング・ソフトウェア: Python, R, Ruby, LabVIEW, NI MAX, Microsoft Office\n実験（物理）: 干渉計測（ESPI）、レーザーアライメント、光学系の最適化、音響加振、 回路設計・組立、オシロスコープ\n実験（化学）: 基礎的なウェットケミストリー、滴定\n言語: 日本語（ネイティブ）、英語（ビジネス）、ドイツ語（初級）"
+  },
+  {
+    "objectID": "about.html#interests",
+    "href": "about.html#interests",
+    "title": "About",
+    "section": "Interests",
+    "text": "Interests\nMechanical engineering, materials engineering, financial analysis, and business operations.\n\n機械工学、材料工学、財務分析、事業運営。"
   },
   {
     "objectID": "about.html#contact",
     "href": "about.html#contact",
     "title": "About",
     "section": "Contact",
-    "text": "Contact\n\nEmail: hikida@wustl.edu\nGitHub: takahiro-h16"
+    "text": "Contact\n\nEmail: hikida@wustl.edu\nGitHub: takahiro-h16\nLinkedIn: takahiro-hikida-92223135a"
   }
 ]
