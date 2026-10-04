@@ -1,0 +1,114 @@
+[
+  {
+    "objectID": "projects/cavity-flow-solver.html",
+    "href": "projects/cavity-flow-solver.html",
+    "title": "2D Lid-Driven Cavity Flow Solver",
+    "section": "",
+    "text": "Status: in progress / 進行中"
+  },
+  {
+    "objectID": "projects/cavity-flow-solver.html#overview",
+    "href": "projects/cavity-flow-solver.html#overview",
+    "title": "2D Lid-Driven Cavity Flow Solver",
+    "section": "Overview",
+    "text": "Overview\nThe lid-driven cavity is the standard first benchmark for an incompressible Navier–Stokes solver: a square box of fluid, closed on three sides, with the top wall sliding at a constant velocity. It has no analytic solution, but the reference data of Ghia et al. (1982) makes it easy to tell whether your code is right.\n\n正方形キャビティの上面だけを一定速度で動かす「リッドドリブンキャビティ」は、 非圧縮 Navier–Stokes ソルバーの最初のベンチマークとして定番の問題です。 解析解はありませんが、Ghia et al. (1982) の参照データと比べることで、 実装が正しいかどうかをはっきり判定できます。"
+  },
+  {
+    "objectID": "projects/cavity-flow-solver.html#governing-equations",
+    "href": "projects/cavity-flow-solver.html#governing-equations",
+    "title": "2D Lid-Driven Cavity Flow Solver",
+    "section": "Governing equations",
+    "text": "Governing equations\nThe solver works with the incompressible Navier–Stokes equations in primitive variables,\n\\[\n\\frac{\\partial \\mathbf{u}}{\\partial t}\n+ (\\mathbf{u} \\cdot \\nabla)\\mathbf{u}\n= -\\frac{1}{\\rho}\\nabla p + \\nu \\nabla^2 \\mathbf{u},\n\\qquad\n\\nabla \\cdot \\mathbf{u} = 0 ,\n\\]\nwhere \\(\\mathbf{u} = (u, v)\\) is the velocity field, \\(p\\) the pressure, \\(\\rho\\) the density and \\(\\nu\\) the kinematic viscosity. Non-dimensionalising with the lid velocity \\(U\\) and the cavity width \\(L\\) leaves a single parameter, the Reynolds number\n\\[\n\\mathrm{Re} = \\frac{U L}{\\nu}.\n\\]\nBecause the velocity and pressure are coupled only through the incompressibility constraint, each time step uses a projection (fractional-step) method: advance the momentum equation to an intermediate velocity \\(\\mathbf{u}^{*}\\), then correct it with the solution of a pressure Poisson equation,\n\\[\n\\nabla^2 p^{\\,n+1} = \\frac{\\rho}{\\Delta t}\\, \\nabla \\cdot \\mathbf{u}^{*},\n\\qquad\n\\mathbf{u}^{\\,n+1} = \\mathbf{u}^{*} - \\frac{\\Delta t}{\\rho}\\nabla p^{\\,n+1}.\n\\]\n\n速度と圧力は非圧縮条件を通じてのみ結合しているため、各時間ステップでは射影法（分数ステップ法）を使います。 まず運動方程式を進めて中間速度 \\(\\mathbf{u}^{*}\\) を得て、次に圧力 Poisson 方程式を解いた結果で補正し、 発散ゼロの速度場に射影します。"
+  },
+  {
+    "objectID": "projects/cavity-flow-solver.html#discretisation",
+    "href": "projects/cavity-flow-solver.html#discretisation",
+    "title": "2D Lid-Driven Cavity Flow Solver",
+    "section": "Discretisation",
+    "text": "Discretisation\n\n\n\nItem\nChoice\n\n\n\n\nGrid\nStaggered (MAC) grid, uniform spacing\n\n\nAdvection\nSecond-order central differences\n\n\nDiffusion\nSecond-order central differences\n\n\nTime integration\nExplicit Euler (RK2 planned)\n\n\nPressure solve\nJacobi / SOR iteration (multigrid planned)"
+  },
+  {
+    "objectID": "projects/cavity-flow-solver.html#implementation-sketch",
+    "href": "projects/cavity-flow-solver.html#implementation-sketch",
+    "title": "2D Lid-Driven Cavity Flow Solver",
+    "section": "Implementation sketch",
+    "text": "Implementation sketch\nThe pressure Poisson solve dominates the runtime, so it is the part worth showing first. The code below is the straightforward SOR version used to get the solver correct before optimising it.\n\n\nShow code\nimport numpy as np\n\n\ndef pressure_poisson(p, b, dx, dy, omega=1.7, tol=1e-6, max_iter=10_000):\n    \"\"\"Solve the pressure Poisson equation by SOR with Neumann walls.\n\n    Parameters\n    ----------\n    p : (ny, nx) ndarray\n        Pressure field; used as the initial guess and overwritten in place.\n    b : (ny, nx) ndarray\n        Right-hand side, rho/dt * div(u*).\n    \"\"\"\n    dx2, dy2 = dx**2, dy**2\n    denom = 2.0 * (dx2 + dy2)\n\n    for it in range(max_iter):\n        p_old = p.copy()\n\n        p[1:-1, 1:-1] = (1.0 - omega) * p[1:-1, 1:-1] + omega * (\n            dy2 * (p[1:-1, 2:] + p[1:-1, :-2])\n            + dx2 * (p[2:, 1:-1] + p[:-2, 1:-1])\n            - b[1:-1, 1:-1] * dx2 * dy2\n        ) / denom\n\n        # Neumann (dp/dn = 0) on all four walls; pressure fixed at one corner\n        # to remove the constant null space.\n        p[:, 0] = p[:, 1]\n        p[:, -1] = p[:, -2]\n        p[0, :] = p[1, :]\n        p[-1, :] = p[-2, :]\n        p[0, 0] = 0.0\n\n        if np.linalg.norm(p - p_old) &lt; tol:\n            return p, it\n\n    return p, max_iter"
+  },
+  {
+    "objectID": "projects/cavity-flow-solver.html#roadmap",
+    "href": "projects/cavity-flow-solver.html#roadmap",
+    "title": "2D Lid-Driven Cavity Flow Solver",
+    "section": "Roadmap",
+    "text": "Roadmap\n\nProjection method on a staggered grid\nSOR pressure solve\nValidation against Ghia et al. (1982) centreline profiles at \\(\\mathrm{Re} = 100, 400, 1000\\)\nRK2 time integration\nMultigrid pressure solve\nStreamline and vorticity plots in the write-up\n\n\n次の目標は、\\(\\mathrm{Re} = 100, 400, 1000\\) での中心線速度プロファイルを Ghia et al. (1982) と比較して検証すること。 その後、時間積分の 2 次精度化と、圧力ソルバーのマルチグリッド化に進みます。"
+  },
+  {
+    "objectID": "projects/cavity-flow-solver.html#references",
+    "href": "projects/cavity-flow-solver.html#references",
+    "title": "2D Lid-Driven Cavity Flow Solver",
+    "section": "References",
+    "text": "References\n\nU. Ghia, K. N. Ghia, C. T. Shin (1982). High-Re solutions for incompressible flow using the Navier–Stokes equations and a multigrid method. Journal of Computational Physics, 48(3), 387–411.\nA. J. Chorin (1968). Numerical solution of the Navier–Stokes equations. Mathematics of Computation, 22(104), 745–762."
+  },
+  {
+    "objectID": "index.html",
+    "href": "index.html",
+    "title": "Takahiro Hikida",
+    "section": "",
+    "text": "I build numerical solvers to understand how fluids actually move."
+  },
+  {
+    "objectID": "index.html#hello",
+    "href": "index.html#hello",
+    "title": "Takahiro Hikida",
+    "section": "Hello",
+    "text": "Hello\nI am a researcher working at the intersection of computational fluid dynamics and scientific computing. My current focus is on writing solvers from scratch — discretizing the governing equations myself, rather than treating a simulation package as a black box, so that every numerical choice is something I can defend.\n\n計算流体力学と科学計算の境界領域で研究しています。いまの関心は、ソルバーを一から書くこと。 シミュレーションパッケージをブラックボックスとして使うのではなく、支配方程式の離散化を自分の手で行い、 数値的な選択のひとつひとつを自分の言葉で説明できる状態を目指しています。"
+  },
+  {
+    "objectID": "index.html#where-to-go-next",
+    "href": "index.html#where-to-go-next",
+    "title": "Takahiro Hikida",
+    "section": "Where to go next",
+    "text": "Where to go next\n\nProjects — what I am building right now.\nAbout — background, and a downloadable CV.\n\n\n\nProjects — 現在取り組んでいるもの\nAbout — 経歴と CV"
+  },
+  {
+    "objectID": "projects.html",
+    "href": "projects.html",
+    "title": "Projects",
+    "section": "",
+    "text": "A running list of things I am building. Each card links to a write-up with the governing equations and the implementation notes.\n\nいま作っているものの一覧です。各カードから、支配方程式と実装メモを書いた詳細ページに移動できます。\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n2D Lid-Driven Cavity Flow Solver\n\n\n\nCFD\n\nPython\n\nIn progress\n\n\n\nIn progress — an incompressible Navier–Stokes solver for the classic lid-driven cavity benchmark, written from scratch in Python.\n\n\n\nOct 4, 2026\n\n\n\n\n\n\nNo matching items"
+  },
+  {
+    "objectID": "about.html",
+    "href": "about.html",
+    "title": "About",
+    "section": "",
+    "text": "Download CV (PDF)"
+  },
+  {
+    "objectID": "about.html#background",
+    "href": "about.html#background",
+    "title": "About",
+    "section": "Background",
+    "text": "Background\nI work on computational fluid dynamics and scientific computing, with a particular interest in writing numerical methods from first principles — understanding a scheme well enough to implement, break, and fix it.\n\n計算流体力学と科学計算を専門としています。数値解法を原理から理解し、 自分で実装し、壊し、直せる状態にすることに関心があります。"
+  },
+  {
+    "objectID": "about.html#education",
+    "href": "about.html#education",
+    "title": "About",
+    "section": "Education",
+    "text": "Education\n\n\n\n\n\n\n\nPeriod\nDegree / Institution\n\n\n\n\n20XX–present\nWashington University in St. Louis\n\n\n20XX–20XX\nB.Sc., your university\n\n\n\n\n※ 年次・学位・所属は仮置きです。実際の経歴に差し替えてください。"
+  },
+  {
+    "objectID": "about.html#research-interests",
+    "href": "about.html#research-interests",
+    "title": "About",
+    "section": "Research interests",
+    "text": "Research interests\n\nIncompressible flow solvers (projection / fractional-step methods)\nNumerical linear algebra for large sparse systems\nReproducible scientific computing workflows\n\n\n\n非圧縮流れのソルバー（射影法・分数ステップ法）\n大規模疎行列に対する数値線形代数\n再現性のある科学計算ワークフロー"
+  },
+  {
+    "objectID": "about.html#contact",
+    "href": "about.html#contact",
+    "title": "About",
+    "section": "Contact",
+    "text": "Contact\n\nEmail: hikida@wustl.edu\nGitHub: takahiro-h16"
+  }
+]
