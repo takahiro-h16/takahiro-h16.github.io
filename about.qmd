@@ -2,55 +2,144 @@
 title: "About"
 ---
 
-<!--
-NOTE: assets/cv.pdf does not exist yet. Drop your CV there and this link
-starts working — no other change needed (assets/ is listed under `resources:`
-in _quarto.yml, so Quarto copies it into _site/ on every render).
--->
-
 [Download CV (PDF)](assets/cv.pdf){.btn .btn-outline-primary role="button"}
-
-::: {.ja}
-※ `assets/cv.pdf` を配置するまで、上のリンクは 404 になります。
-:::
 
 ## Background
 
-I work on computational fluid dynamics and scientific computing, with a
-particular interest in writing numerical methods from first principles —
-understanding a scheme well enough to implement, break, and fix it.
+I am a mechanical engineering student at Washington University in St. Louis
+(B.S. and M.S.), coming from a physics background at Whitman College. My
+experience spans experimental physics — optical interferometry and vibration
+analysis — as well as software engineering and business analysis in industry.
+On the side, I am writing numerical solvers from first principles, starting
+with a [lid-driven cavity flow solver](projects/cavity-flow-solver.qmd).
 
 ::: {.ja}
-計算流体力学と科学計算を専門としています。数値解法を原理から理解し、
-自分で実装し、壊し、直せる状態にすることに関心があります。
+ワシントン大学セントルイス校で機械工学（学士・修士）を学んでいます。前籍の
+Whitman College では物理学を専攻しました。光干渉計測や振動解析といった実験物理に加え、
+企業でのソフトウェア開発やビジネス分析の経験があります。また個人で、
+[キャビティ流れのソルバー](projects/cavity-flow-solver.qmd)をはじめ、
+数値ソルバーを原理から実装しています。
 :::
 
 ## Education
 
 | Period | Degree / Institution |
 |--------|----------------------|
-| 20XX–present | Washington University in St. Louis |
-| 20XX–20XX | B.Sc., *your university* |
+| Expected May 2029 | M.S. in Mechanical Engineering, Washington University in St. Louis |
+| Expected May 2028 | B.S. in Mechanical Engineering, minor in Statistics, Washington University in St. Louis |
+| 2023–2026 | B.A. in Physics, minor in Economics, Whitman College, Walla Walla, WA (degree conferral expected May 2028; GPA 3.81/4.0, magna cum laude) |
 
 : {tbl-colwidths="[25,75]"}
 
+## Experience
+
+### Business Development and Analysis Intern — CADDi Inc.
+
+*Tokyo, Japan · Summer 2026*
+
+- Analyzed bottlenecks in the manufacturing industry — supply chains,
+  miscommunication between sectors, and the resulting waste of resources and time.
+- Designed a new business plan, including cost and revenue analysis, and
+  presented it to the company's management.
+
 ::: {.ja}
-※ 年次・学位・所属は仮置きです。実際の経歴に差し替えてください。
+- 製造業におけるボトルネック（サプライチェーン、部門間のコミュニケーション不全、
+  それに伴う資源と時間の浪費）を分析。
+- コスト・収益分析を含む新規事業計画を立案し、経営陣にプレゼンテーション。
 :::
 
-## Research interests
+### Software Engineer Intern — GA Technologies
 
-- Incompressible flow solvers (projection / fractional-step methods)
-- Numerical linear algebra for large sparse systems
-- Reproducible scientific computing workflows
+*Tokyo, Japan · Summer 2026*
+
+- Coded 3 new projects for software supporting M&A processes; debugged code
+  based on daily feedback.
+- Prototyped cost and customer analysis models in Ruby, R, and Python.
 
 ::: {.ja}
-- 非圧縮流れのソルバー（射影法・分数ステップ法）
-- 大規模疎行列に対する数値線形代数
-- 再現性のある科学計算ワークフロー
+- M&A プロセスを支援するソフトウェアで、新規プロジェクト 3 件の開発を担当。
+  日々のフィードバックをもとにデバッグを行う。
+- Ruby・R・Python でコスト分析・顧客分析モデルのプロトタイプを作成。
+:::
+
+### ESPI Lab Research Assistant — Whitman College
+
+*Walla Walla, WA · Summer 2025*
+
+- Used wave interference to analyze microscopic vibrations of acoustic instruments.
+- Optimized the lab's ESPI (Electronic Speckle Pattern Interferometry) setup by
+  calculating the optimal oscillation frequency and amplitude of a piezo-attached mirror.
+- Processed 1,000+ data points and images in LabVIEW, comparing theoretical
+  predictions with experimental results; identified resonance frequencies and
+  vibration mode patterns of instruments such as violas and pianos.
+- Authored a 10-page technical report with error analysis and conclusions, and
+  presented the findings.
+
+::: {.ja}
+- 波の干渉を利用して、楽器の微小振動を解析。
+- ピエゾ素子付きミラーの最適な振動周波数・振幅を計算し、研究室の
+  ESPI（電子スペックルパターン干渉法）装置を最適化。
+- LabVIEW で 1,000 点以上のデータと画像を処理し、理論予測と実験結果を比較。
+  ヴィオラやピアノなどの共振周波数と振動モードを特定。
+- 誤差解析と結論をまとめた 10 ページの技術レポートを執筆し、成果を発表。
+:::
+
+### Japanese Tutor — Whitman College
+
+*Walla Walla, WA · 09/2024 – 05/2026*
+
+- Tutored 20+ students in spoken Japanese and in building an intuitive
+  understanding of complex grammar.
+- Took part in cultural exchange events, volunteering in a sister-city high
+  school exchange program.
+
+::: {.ja}
+- 20 名以上の学生に、日本語の会話練習と文法の直感的な理解をサポート。
+- 文化交流イベントに参加し、姉妹都市の高校交流プログラムでボランティア。
+:::
+
+## Leadership
+
+### Men's Soccer — Whitman College
+
+*Walla Walla, WA · 09/2023 – 11/2025*
+
+- Played NCAA Division III varsity soccer, balancing 20+ hours per week of
+  practice, travel, and games with a full academic course load.
+- Won the Northwest Conference and qualified for the NCAA D3 Men's Soccer
+  National Tournament in the 2025/26 season.
+
+::: {.ja}
+- NCAA Division III のサッカー部でプレー。週 20 時間以上の練習・遠征・試合と学業を両立。
+- 2025/26 シーズンに Northwest Conference で優勝し、NCAA D3 全国大会に出場。
+:::
+
+## Skills
+
+- **Programming & software:** Python, R, Ruby, LabVIEW, NI MAX, Microsoft Office Suite
+- **Laboratory — physics:** interferometry (ESPI), laser alignment, optical setup
+  optimization, acoustic excitation, circuit design and assembly, oscilloscope operation
+- **Laboratory — chemistry:** basic wet chemistry, titration techniques
+- **Languages:** Japanese (native), English (professional), German (elementary)
+
+::: {.ja}
+- **プログラミング・ソフトウェア:** Python, R, Ruby, LabVIEW, NI MAX, Microsoft Office
+- **実験（物理）:** 干渉計測（ESPI）、レーザーアライメント、光学系の最適化、音響加振、
+  回路設計・組立、オシロスコープ
+- **実験（化学）:** 基礎的なウェットケミストリー、滴定
+- **言語:** 日本語（ネイティブ）、英語（ビジネス）、ドイツ語（初級）
+:::
+
+## Interests
+
+Mechanical engineering, materials engineering, financial analysis, and business operations.
+
+::: {.ja}
+機械工学、材料工学、財務分析、事業運営。
 :::
 
 ## Contact
 
 - Email: [hikida@wustl.edu](mailto:hikida@wustl.edu)
 - GitHub: [takahiro-h16](https://github.com/takahiro-h16)
+- LinkedIn: [takahiro-hikida-92223135a](https://www.linkedin.com/in/takahiro-hikida-92223135a)

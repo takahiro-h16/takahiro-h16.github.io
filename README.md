@@ -19,7 +19,7 @@ quarto render     # one-off build into _site/ (git-ignored)
 | `projects.qmd` | Card grid, generated from everything in `projects/` |
 | `projects/*.qmd` | One file per project; its YAML fills in the card |
 | `about.qmd` | Background and CV link |
-| `assets/` | Static files copied verbatim into the site (put `cv.pdf` here) |
+| `assets/` | Static files copied verbatim into the site (`cv.pdf` = exported resume) |
 | `styles.css` | Small overrides for the bilingual EN/JA layout |
 
 ## Adding a project

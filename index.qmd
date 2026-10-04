@@ -13,13 +13,13 @@ I build numerical solvers to understand how fluids actually move.
 
 ## Hello
 
-I am a researcher working at the intersection of computational fluid dynamics and
-scientific computing. My current focus is on writing solvers from scratch —
+I am a mechanical engineering student at Washington University in St. Louis,
+with a background in physics. Outside of coursework, I am writing solvers from scratch —
 discretizing the governing equations myself, rather than treating a simulation
 package as a black box, so that every numerical choice is something I can defend.
 
 ::: {.ja}
-計算流体力学と科学計算の境界領域で研究しています。いまの関心は、ソルバーを一から書くこと。
+ワシントン大学セントルイス校で機械工学を学んでいます（バックグラウンドは物理学）。授業の外では、ソルバーを一から書いています。
 シミュレーションパッケージをブラックボックスとして使うのではなく、支配方程式の離散化を自分の手で行い、
 数値的な選択のひとつひとつを自分の言葉で説明できる状態を目指しています。
 :::
@@ -27,9 +27,9 @@ package as a black box, so that every numerical choice is something I can defend
 ## Where to go next
 
 - [**Projects**](projects.qmd) — what I am building right now.
-- [**About**](about.qmd) — background, and a downloadable CV.
+- [**About**](about.qmd) — education, experience, skills, and a downloadable CV.
 
 ::: {.ja}
 - [**Projects**](projects.qmd) — 現在取り組んでいるもの
-- [**About**](about.qmd) — 経歴と CV
+- [**About**](about.qmd) — 学歴・職歴・スキルと CV
 :::
