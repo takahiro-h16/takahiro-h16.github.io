@@ -1,0 +1,36 @@
+name: Publish site
+
+on:
+  push:
+    branches: [main]
+  # Lets you re-run a deploy from the Actions tab without pushing a commit.
+  workflow_dispatch:
+
+# Required so the publish step can push the rendered site to gh-pages.
+permissions:
+  contents: write
+
+# If two pushes land close together, let the newer one win.
+concurrency:
+  group: quarto-publish
+  cancel-in-progress: true
+
+jobs:
+  build-deploy:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Check out repository
+        uses: actions/checkout@v4
+
+      - name: Set up Quarto
+        uses: quarto-dev/quarto-actions/setup@v2
+
+      # Renders the site and force-pushes _site/ to the gh-pages branch.
+      # Quarto also writes .nojekyll there so GitHub Pages serves the
+      # underscore-prefixed asset directories instead of running Jekyll.
+      - name: Render and publish to gh-pages
+        uses: quarto-dev/quarto-actions/publish@v2
+        with:
+          target: gh-pages
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}

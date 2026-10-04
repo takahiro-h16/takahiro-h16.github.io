@@ -1,0 +1,42 @@
+project:
+  type: website
+  output-dir: _site
+
+website:
+  title: "Takahiro Hikida"
+  site-url: "https://takahiro-h16.github.io"
+  description: "Personal site — research, projects, CV."
+  navbar:
+    left:
+      - href: index.qmd
+        text: Home
+      - href: projects.qmd
+        text: Projects
+      - href: about.qmd
+        text: About
+    right:
+      - icon: github
+        href: https://github.com/takahiro-h16
+        aria-label: GitHub
+  page-footer:
+    center: "© 2026 Takahiro Hikida · Built with [Quarto](https://quarto.org)"
+
+# Static files copied to _site/ as-is (CV PDF, images, ...)
+resources:
+  - assets/
+
+format:
+  html:
+    theme: litera
+    css: styles.css
+    toc: true
+    toc-depth: 3
+    anchor-sections: true
+    # Code blocks are collapsed by default; click to expand.
+    code-fold: true
+    code-summary: "Show code"
+    code-tools: true
+    code-copy: true
+    code-line-numbers: false
+    # Math is rendered with MathJax.
+    html-math-method: mathjax

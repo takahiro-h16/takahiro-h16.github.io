@@ -1,0 +1,21 @@
+---
+title: "Projects"
+toc: false
+listing:
+  # Every .qmd under projects/ becomes one card. Add a file -> add a card.
+  contents: projects
+  type: grid
+  grid-columns: 2
+  sort: "date desc"
+  fields: [title, description, categories, date]
+  categories: true
+  sort-ui: false
+  filter-ui: false
+---
+
+A running list of things I am building. Each card links to a write-up with the
+governing equations and the implementation notes.
+
+::: {.ja}
+いま作っているものの一覧です。各カードから、支配方程式と実装メモを書いた詳細ページに移動できます。
+:::

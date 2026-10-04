@@ -1,0 +1,19 @@
+# Quarto
+/.quarto/
+/_site/
+/_freeze/
+*_files/
+*_cache/
+/.luarc.json
+
+# R / Python side-artifacts (in case a qmd starts executing code later)
+.Rproj.user/
+.Rhistory
+__pycache__/
+.ipynb_checkpoints/
+
+# OS
+.DS_Store
+Thumbs.db
+
+**/*.quarto_ipynb

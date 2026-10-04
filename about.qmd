@@ -1,0 +1,56 @@
+---
+title: "About"
+---
+
+<!--
+NOTE: assets/cv.pdf does not exist yet. Drop your CV there and this link
+starts working — no other change needed (assets/ is listed under `resources:`
+in _quarto.yml, so Quarto copies it into _site/ on every render).
+-->
+
+[Download CV (PDF)](assets/cv.pdf){.btn .btn-outline-primary role="button"}
+
+::: {.ja}
+※ `assets/cv.pdf` を配置するまで、上のリンクは 404 になります。
+:::
+
+## Background
+
+I work on computational fluid dynamics and scientific computing, with a
+particular interest in writing numerical methods from first principles —
+understanding a scheme well enough to implement, break, and fix it.
+
+::: {.ja}
+計算流体力学と科学計算を専門としています。数値解法を原理から理解し、
+自分で実装し、壊し、直せる状態にすることに関心があります。
+:::
+
+## Education
+
+| Period | Degree / Institution |
+|--------|----------------------|
+| 20XX–present | Washington University in St. Louis |
+| 20XX–20XX | B.Sc., *your university* |
+
+: {tbl-colwidths="[25,75]"}
+
+::: {.ja}
+※ 年次・学位・所属は仮置きです。実際の経歴に差し替えてください。
+:::
+
+## Research interests
+
+- Incompressible flow solvers (projection / fractional-step methods)
+- Numerical linear algebra for large sparse systems
+- Reproducible scientific computing workflows
+
+::: {.ja}
+- 非圧縮流れのソルバー（射影法・分数ステップ法）
+- 大規模疎行列に対する数値線形代数
+- 再現性のある科学計算ワークフロー
+:::
+
+## Contact
+
+- Email: [hikida@wustl.edu](mailto:hikida@wustl.edu)
+- GitHub: [takahiro-h16](https://github.com/takahiro-h16)
