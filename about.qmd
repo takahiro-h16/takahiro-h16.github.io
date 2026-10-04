@@ -8,11 +8,11 @@ title: "About"
 
 I am a mechanical engineering student at Washington University in St. Louis
 (B.S. and M.S.), coming from a physics background at Whitman College. My
-experience spans experimental physics — optical interferometry and vibration
-analysis — as well as software engineering and business analysis in industry.
+experience spans experimental physics, optical interferometry and vibration
+analysis, as well as software engineering and business analysis in industry.
 
 ::: {.ja}
-ワシントン大学セントルイス校で機械工学（学士・修士）を学んでいます。前籍の
+ワシントン大学セントルイス校で機械工学（学士・修士）を学んでいます。前所属の
 Whitman College では物理学を専攻しました。光干渉計測や振動解析といった実験物理に加え、
 企業でのソフトウェア開発やビジネス分析の経験があります。
 :::
