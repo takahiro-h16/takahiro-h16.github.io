@@ -49,7 +49,7 @@ execute:
 ```
 
 in their front matter — the cell is then folded but never run, so rendering
-needs no Python kernel. See `projects/cavity-flow-solver.qmd`.
+needs no Python kernel.
 
 ## Deployment
 

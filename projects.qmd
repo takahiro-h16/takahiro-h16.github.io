@@ -13,9 +13,8 @@ listing:
   filter-ui: false
 ---
 
-A running list of things I am building. Each card links to a write-up with the
-governing equations and the implementation notes.
+A running list of things I am building.
 
 ::: {.ja}
-いま作っているものの一覧です。各カードから、支配方程式と実装メモを書いた詳細ページに移動できます。
+いま作っているものの一覧です。
 :::

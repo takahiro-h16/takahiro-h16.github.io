@@ -10,15 +10,11 @@ I am a mechanical engineering student at Washington University in St. Louis
 (B.S. and M.S.), coming from a physics background at Whitman College. My
 experience spans experimental physics — optical interferometry and vibration
 analysis — as well as software engineering and business analysis in industry.
-On the side, I am writing numerical solvers from first principles, starting
-with a [lid-driven cavity flow solver](projects/cavity-flow-solver.qmd).
 
 ::: {.ja}
 ワシントン大学セントルイス校で機械工学（学士・修士）を学んでいます。前籍の
 Whitman College では物理学を専攻しました。光干渉計測や振動解析といった実験物理に加え、
-企業でのソフトウェア開発やビジネス分析の経験があります。また個人で、
-[キャビティ流れのソルバー](projects/cavity-flow-solver.qmd)をはじめ、
-数値ソルバーを原理から実装しています。
+企業でのソフトウェア開発やビジネス分析の経験があります。
 :::
 
 ## Education

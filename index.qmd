@@ -3,25 +3,13 @@ title: "Takahiro Hikida"
 toc: false
 ---
 
-::: {.lead-definition}
-I build numerical solvers to understand how fluids actually move.
-:::
-
-::: {.ja .lead-definition-ja}
-流体の動きを理解するために、数値ソルバーを書いています。
-:::
-
 ## Hello
 
 I am a mechanical engineering student at Washington University in St. Louis,
-with a background in physics. Outside of coursework, I am writing solvers from scratch —
-discretizing the governing equations myself, rather than treating a simulation
-package as a black box, so that every numerical choice is something I can defend.
+with a background in physics.
 
 ::: {.ja}
-ワシントン大学セントルイス校で機械工学を学んでいます（バックグラウンドは物理学）。授業の外では、ソルバーを一から書いています。
-シミュレーションパッケージをブラックボックスとして使うのではなく、支配方程式の離散化を自分の手で行い、
-数値的な選択のひとつひとつを自分の言葉で説明できる状態を目指しています。
+ワシントン大学セントルイス校で機械工学を学んでいます（バックグラウンドは物理学）。
 :::
 
 ## Where to go next
