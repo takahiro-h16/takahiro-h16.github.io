@@ -200,7 +200,14 @@
     "href": "about.html#background",
     "title": "About",
     "section": "Background",
-    "text": "Background\nI am a mechanical engineering student at Washington University in St. Louis (B.S. and M.S.), coming from a physics background at Whitman College. My experience spans experimental physics, optical interferometry and vibration analysis, as well as software engineering and business analysis in industry.\n&lt;&lt;&lt;&lt;&lt;&lt;&lt; HEAD ::: {.ja} ワシントン大学セントルイス校で機械工学（学士・修士）を学んでいます。前所属の Whitman College では物理学を専攻しました。光干渉計測や振動解析といった実験物理に加え、 企業でのソフトウェア開発やビジネス分析の経験があります。 :::\n======= &gt;&gt;&gt;&gt;&gt;&gt;&gt; 66efc66 (Split site into English and Japanese pages with a language switch) ## Education\n\n\n\n\n\n\n\nPeriod\nDegree / Institution\n\n\n\n\nExpected May 2029\nM.S. in Mechanical Engineering, Washington University in St. Louis\n\n\nExpected May 2028\nB.S. in Mechanical Engineering, minor in Statistics, Washington University in St. Louis\n\n\n2023–2026\nB.A. in Physics, minor in Economics, Whitman College, Walla Walla, WA (degree conferral expected May 2028; GPA 3.81/4.0, magna cum laude)"
+    "text": "Background\nI am a mechanical engineering student at Washington University in St. Louis (B.S. and M.S.), coming from a physics background at Whitman College. My experience spans experimental physics, optical interferometry and vibration analysis, as well as software engineering and business analysis in industry."
+  },
+  {
+    "objectID": "about.html#education",
+    "href": "about.html#education",
+    "title": "About",
+    "section": "Education",
+    "text": "Education\n\n\n\n\n\n\n\nPeriod\nDegree / Institution\n\n\n\n\nExpected May 2029\nM.S. in Mechanical Engineering, Washington University in St. Louis\n\n\nExpected May 2028\nB.S. in Mechanical Engineering, minor in Statistics, Washington University in St. Louis\n\n\n2023–2026\nB.A. in Physics, minor in Economics, Whitman College, Walla Walla, WA (degree conferral expected May 2028; GPA 3.81/4.0, magna cum laude)"
   },
   {
     "objectID": "about.html#experience",
