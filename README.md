@@ -20,7 +20,9 @@ quarto render     # one-off build into _site/ (git-ignored)
 | `projects/*.qmd` | One file per project; its YAML fills in the card |
 | `about.qmd` | Background and CV link |
 | `assets/` | Static files copied verbatim into the site (`cv.pdf` = exported resume) |
-| `styles.css` | Small overrides for the bilingual EN/JA layout |
+| `ja/` | Japanese twin of every page above, same file names (`ja/_metadata.yml` sets `lang: ja`) |
+| `_includes/lang-switch.html` | Navbar EN ⇄ 日本語 button; on `ja/` pages also points the navbar at the Japanese pages |
+| `styles.css` | Small style overrides (Japanese font on `ja/` pages, listing cards) |
 
 ## Adding a project
 
@@ -36,6 +38,10 @@ categories: [Tag, Tag]
 ```
 
 The listing on `projects.qmd` picks it up automatically, newest first.
+
+For the Japanese version, add `ja/projects/<slug>.qmd` with the same slug, so the
+language button can jump between the two. The same rule holds for any new page:
+`foo.qmd` ⇄ `ja/foo.qmd`.
 
 ### Code blocks
 

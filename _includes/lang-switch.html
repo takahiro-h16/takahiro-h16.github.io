@@ -1,0 +1,37 @@
+<script>
+// EN <-> JA switch. Every page at <path> has a Japanese twin at ja/<path>.
+// The navbar is shared by both languages, so on Japanese pages its links and
+// labels are rewritten here to point at the ja/ versions.
+document.addEventListener("DOMContentLoaded", function () {
+  var brand = document.querySelector(".navbar-brand");
+  if (!brand) return;
+  var root = new URL(brand.getAttribute("href"), location.href).pathname
+    .replace(/index\.html$/, "");
+  var rel = location.pathname.slice(root.length) || "index.html";
+  if (rel.endsWith("/")) rel += "index.html";
+  var isJa = rel.startsWith("ja/");
+
+  var toggle = document.querySelector(".navbar .nav-link .bi-translate");
+  if (toggle) {
+    toggle = toggle.closest("a");
+    toggle.href = root + (isJa ? rel.slice(3) : "ja/" + rel) + location.hash;
+    toggle.querySelector(".menu-text").textContent = isJa ? "English" : "日本語";
+    toggle.setAttribute("lang", isJa ? "en" : "ja");
+  }
+
+  if (!isJa) return;
+  var labels = { Home: "ホーム", Projects: "プロジェクト", About: "プロフィール" };
+  document.querySelectorAll(".navbar-brand, .navbar .nav-link").forEach(function (a) {
+    if (a === toggle || !a.getAttribute("href")) return;
+    var url = new URL(a.href, location.href);
+    if (url.origin !== location.origin || !url.pathname.startsWith(root)) return;
+    var path = url.pathname.slice(root.length) || "index.html";
+    if (path.startsWith("ja/") || !/(\.html|\/)$/.test(path)) return;
+    a.href = root + "ja/" + path;
+    var text = a.querySelector(".menu-text");
+    if (text && labels[text.textContent.trim()]) {
+      text.textContent = labels[text.textContent.trim()];
+    }
+  });
+});
+</script>

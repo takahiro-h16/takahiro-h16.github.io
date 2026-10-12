@@ -1,0 +1,16 @@
+---
+title: "プロジェクト"
+toc: false
+listing:
+  # ja/projects/ 以下の .qmd が 1 枚ずつカードになる。
+  contents: projects
+  type: grid
+  grid-columns: 2
+  sort: "date desc"
+  fields: [title, description, categories, date]
+  categories: true
+  sort-ui: false
+  filter-ui: false
+---
+
+いま作っているものの一覧です。

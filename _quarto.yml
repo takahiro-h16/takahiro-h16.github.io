@@ -15,6 +15,12 @@ website:
       - href: about.qmd
         text: About
     right:
+      # Language switch: the script in _includes/lang-switch.html points it at
+      # the current page's counterpart in the other language.
+      - icon: translate
+        text: "日本語"
+        href: ja/index.qmd
+        aria-label: "Switch language / 言語を切り替え"
       - icon: github
         href: https://github.com/takahiro-h16
         aria-label: GitHub
@@ -29,6 +35,7 @@ format:
   html:
     theme: litera
     css: styles.css
+    include-in-header: _includes/lang-switch.html
     toc: true
     toc-depth: 3
     anchor-sections: true
