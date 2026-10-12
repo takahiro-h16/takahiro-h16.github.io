@@ -1,14 +1,14 @@
 ---
 title: "時間平均 ESPI による共振モードの可視化"
 subtitle: "金属半球・ヴィオラ・ドラムヘッド"
-description: "2025 年夏、Whitman College での研究。電子スペックルパターン干渉法で金属半球・ヴィオラ・ドラムヘッドの振動モードを撮像。"
+description: "2025 年夏、ウィットマンカレッジでの研究。電子スペックルパターン干渉法で金属半球・ヴィオラ・ドラムヘッドの振動モードを撮像。"
 date: 2025-08-04
 categories: [実験物理, 光学, 振動, LabVIEW]
 image: ../../projects/espi-resonant-modes/hemi-vertical-990.png
 ---
 
 **Takahiro Hikida** | 指導教員: Dr. Kurt Hoffman<br>
-Whitman College 物理学科 サマーリサーチ · 2025 年 6 月–8 月
+ウィットマンカレッジ物理学科 サマーリサーチ · 2025 年 6 月–8 月
 
 ::: {.callout-note}
 本ページは要旨のみの日本語版です。実験方法・結果・考察を含むレポート全文は

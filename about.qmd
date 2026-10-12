@@ -7,7 +7,8 @@ title: "About"
 ## Background
 
 I am a mechanical engineering student at Washington University in St. Louis
-(B.S. and M.S.), coming from a physics background at Whitman College. My
+(B.S. and M.S.), with a minor in statistics. Before that, I majored in physics
+and minored in economics at Whitman College. My
 experience spans experimental physics, optical interferometry and vibration
 analysis, as well as software engineering and business analysis in industry.
 
