@@ -2,7 +2,14 @@
   {
     "listing": "/projects.html",
     "items": [
+      "/ja/projects/espi-resonant-modes.html",
       "/projects/espi-resonant-modes.html"
+    ]
+  },
+  {
+    "listing": "/ja/projects.html",
+    "items": [
+      "/ja/projects/espi-resonant-modes.html"
     ]
   }
 ]

@@ -11,7 +11,7 @@
     "href": "projects/espi-resonant-modes.html#abstract",
     "title": "Visualizing Resonant Modes with Time-Averaged ESPI",
     "section": "Abstract",
-    "text": "Abstract\nElectronic speckle pattern interferometry (ESPI) was used to image the vibration patterns of acoustically driven objects of increasing size and complexity: a metal plate (system characterization), a metal hemisphere, the top plate of a viola, a snare drumhead, and, as a preliminary test, a piano soundboard. Before imaging, I characterized the setup by bounding the laser coherence length, calibrating the reference-mirror piezo, and estimating the piezo drive from the optimum condition \\(\\gamma T = 2.32\\) derived by Moore and Skubal. The hemisphere showed nine resonances between 64 and 1614 Hz, and five of the six resonances seen in both mounting orientations agreed within 3 Hz. Where measured resonances could be matched to a finite-element (COMSOL) model, the four highest agreed within 10%, while the lowest shell mode differed by 78%. The viola produced visible patterns at every frequency from about 200 to 1000 Hz, with stronger responses near nine frequencies, and changing the bridge tension produced no reproducible frequency shift. The drumhead required drive amplitudes near 0.1 V and showed asymmetric modes, consistent with non-uniform head tension.\n\n電子スペックルパターン干渉法（ESPI）を用いて、音響的に加振した物体の振動パターンを、 サイズと複雑さの順に可視化しました。対象は金属板（装置の特性評価）、金属半球、 ヴィオラの表板、スネアドラムのヘッド、そして予備実験としてピアノの響板です。 撮像の前に、レーザーのコヒーレンス長の下限を見積もり、参照ミラーのピエゾを較正し、 Moore と Skubal が導いた最適条件 \\(\\gamma T = 2.32\\) からピエゾの駆動条件を見積もりました。 半球では 64–1614 Hz に 9 つの共振が見られ、2 通りの設置で共通して観測された 6 つのうち 5 つは 3 Hz 以内で一致しました。有限要素（COMSOL）モデルと対応づけられた共振のうち、高次の 4 つは 10% 以内で一致した一方、最低次のシェルモードは 78% ずれていました。 ヴィオラでは約 200–1000 Hz のすべての周波数でパターンが見え、特に 9 つの周波数付近で強く応答しました。 駒の張力を変えても、再現性のある周波数シフトは見られませんでした。 ドラムヘッドは 0.1 V 前後の弱い駆動が必要で、非対称なモードを示しました。これはヘッドの張力が不均一であることと整合します。"
+    "text": "Abstract\nElectronic speckle pattern interferometry (ESPI) was used to image the vibration patterns of acoustically driven objects of increasing size and complexity: a metal plate (system characterization), a metal hemisphere, the top plate of a viola, a snare drumhead, and, as a preliminary test, a piano soundboard. Before imaging, I characterized the setup by bounding the laser coherence length, calibrating the reference-mirror piezo, and estimating the piezo drive from the optimum condition \\(\\gamma T = 2.32\\) derived by Moore and Skubal. The hemisphere showed nine resonances between 64 and 1614 Hz, and five of the six resonances seen in both mounting orientations agreed within 3 Hz. Where measured resonances could be matched to a finite-element (COMSOL) model, the four highest agreed within 10%, while the lowest shell mode differed by 78%. The viola produced visible patterns at every frequency from about 200 to 1000 Hz, with stronger responses near nine frequencies, and changing the bridge tension produced no reproducible frequency shift. The drumhead required drive amplitudes near 0.1 V and showed asymmetric modes, consistent with non-uniform head tension."
   },
   {
     "objectID": "projects/espi-resonant-modes.html#background-and-objectives",
@@ -63,32 +63,130 @@
     "text": "References\n\nM. C. Horne, “Measuring Resonances of Guitar Top Plates at Various Stages of Fabrication,” senior thesis, Whitman College (2022).\nT. R. Moore and J. J. Skubal, “Time-averaged electronic speckle pattern interferometry in the presence of ambient motion. Part I. Theory and experiments,” Applied Optics 47(25), 4640–4648 (2008). doi:10.1364/AO.47.004640"
   },
   {
+    "objectID": "ja/projects/espi-resonant-modes.html",
+    "href": "ja/projects/espi-resonant-modes.html",
+    "title": "時間平均 ESPI による共振モードの可視化",
+    "section": "",
+    "text": "Takahiro Hikida | 指導教員: Dr. Kurt Hoffman Whitman College 物理学科 サマーリサーチ · 2025 年 6 月–8 月"
+  },
+  {
+    "objectID": "ja/projects/espi-resonant-modes.html#要旨",
+    "href": "ja/projects/espi-resonant-modes.html#要旨",
+    "title": "時間平均 ESPI による共振モードの可視化",
+    "section": "要旨",
+    "text": "要旨\n電子スペックルパターン干渉法（ESPI）を用いて、音響的に加振した物体の振動パターンを、 サイズと複雑さの順に可視化しました。対象は金属板（装置の特性評価）、金属半球、 ヴィオラの表板、スネアドラムのヘッド、そして予備実験としてピアノの響板です。 撮像の前に、レーザーのコヒーレンス長の下限を見積もり、参照ミラーのピエゾを較正し、 Moore と Skubal が導いた最適条件 \\(\\gamma T = 2.32\\) からピエゾの駆動条件を見積もりました。 半球では 64–1614 Hz に 9 つの共振が見られ、2 通りの設置で共通して観測された 6 つのうち 5 つは 3 Hz 以内で一致しました。有限要素（COMSOL）モデルと対応づけられた共振のうち、高次の 4 つは 10% 以内で一致した一方、最低次のシェルモードは 78% ずれていました。 ヴィオラでは約 200–1000 Hz のすべての周波数でパターンが見え、特に 9 つの周波数付近で強く応答しました。 駒の張力を変えても、再現性のある周波数シフトは見られませんでした。 ドラムヘッドは 0.1 V 前後の弱い駆動が必要で、非対称なモードを示しました。これはヘッドの張力が不均一であることと整合します。\n\n\n\n金属半球の共振モード（990.2 Hz、縦置き）"
+  },
+  {
+    "objectID": "ja/index.html",
+    "href": "ja/index.html",
+    "title": "Takahiro Hikida",
+    "section": "",
+    "text": "ワシントン大学セントルイス校で機械工学を専攻し、統計学を副専攻としています。Whitman College で 物理学と経済学を学んだのち、3-2 プログラムを通じて編入しました。エンジニアや金融に携わる人たちに 囲まれて育ち、何がつくられるかは物理だけでなく、コスト、資本、規模によっても決まることを早くから 目にしてきました。ひとつの部品がどう振る舞うかから、工場や産業が何をつくるかをどう決めるかまで、 その全体にまたがって仕事をすることが目標です。"
+  },
+  {
+    "objectID": "ja/index.html#はじめまして",
+    "href": "ja/index.html#はじめまして",
+    "title": "Takahiro Hikida",
+    "section": "",
+    "text": "ワシントン大学セントルイス校で機械工学を専攻し、統計学を副専攻としています。Whitman College で 物理学と経済学を学んだのち、3-2 プログラムを通じて編入しました。エンジニアや金融に携わる人たちに 囲まれて育ち、何がつくられるかは物理だけでなく、コスト、資本、規模によっても決まることを早くから 目にしてきました。ひとつの部品がどう振る舞うかから、工場や産業が何をつくるかをどう決めるかまで、 その全体にまたがって仕事をすることが目標です。"
+  },
+  {
+    "objectID": "ja/index.html#サイト案内",
+    "href": "ja/index.html#サイト案内",
+    "title": "Takahiro Hikida",
+    "section": "サイト案内",
+    "text": "サイト案内\n\nプロジェクト — 現在取り組んでいるもの\nプロフィール — 学歴・職歴・スキルと CV"
+  },
+  {
     "objectID": "index.html",
     "href": "index.html",
     "title": "Takahiro Hikida",
     "section": "",
-    "text": "I’m a mechanical engineering student, minoring in statistics, at Washington University in St. Louis, where I joined through a 3-2 program after studying physics and economics at Whitman College. Growing up around engineers and people in finance, I saw early that what gets built depends not only on physics, but on cost, capital, and scale. My goal is to work across that whole range, from how a single component behaves to how factories and industries decide what to make.\n\nワシントン大学セントルイス校で機械工学を専攻し、統計学を副専攻としています。Whitman College で 物理学と経済学を学んだのち、3-2 プログラムを通じて編入しました。エンジニアや金融に携わる人たちに 囲まれて育ち、何がつくられるかは物理だけでなく、コスト、資本、規模によっても決まることを早くから 目にしてきました。ひとつの部品がどう振る舞うかから、工場や産業が何をつくるかをどう決めるかまで、 その全体にまたがって仕事をすることが目標です。"
+    "text": "I’m a mechanical engineering student, minoring in statistics, at Washington University in St. Louis, where I joined through a 3-2 program after studying physics and economics at Whitman College. Growing up around engineers and people in finance, I saw early that what gets built depends not only on physics, but on cost, capital, and scale. My goal is to work across that whole range, from how a single component behaves to how factories and industries decide what to make."
   },
   {
     "objectID": "index.html#hello",
     "href": "index.html#hello",
     "title": "Takahiro Hikida",
     "section": "",
-    "text": "I’m a mechanical engineering student, minoring in statistics, at Washington University in St. Louis, where I joined through a 3-2 program after studying physics and economics at Whitman College. Growing up around engineers and people in finance, I saw early that what gets built depends not only on physics, but on cost, capital, and scale. My goal is to work across that whole range, from how a single component behaves to how factories and industries decide what to make.\n\nワシントン大学セントルイス校で機械工学を専攻し、統計学を副専攻としています。Whitman College で 物理学と経済学を学んだのち、3-2 プログラムを通じて編入しました。エンジニアや金融に携わる人たちに 囲まれて育ち、何がつくられるかは物理だけでなく、コスト、資本、規模によっても決まることを早くから 目にしてきました。ひとつの部品がどう振る舞うかから、工場や産業が何をつくるかをどう決めるかまで、 その全体にまたがって仕事をすることが目標です。"
+    "text": "I’m a mechanical engineering student, minoring in statistics, at Washington University in St. Louis, where I joined through a 3-2 program after studying physics and economics at Whitman College. Growing up around engineers and people in finance, I saw early that what gets built depends not only on physics, but on cost, capital, and scale. My goal is to work across that whole range, from how a single component behaves to how factories and industries decide what to make."
   },
   {
     "objectID": "index.html#where-to-go-next",
     "href": "index.html#where-to-go-next",
     "title": "Takahiro Hikida",
     "section": "Where to go next",
-    "text": "Where to go next\n\nProjects — what I am building right now.\nAbout — education, experience, skills, and a downloadable CV.\n\n\n\nProjects — 現在取り組んでいるもの\nAbout — 学歴・職歴・スキルと CV"
+    "text": "Where to go next\n\nProjects — what I am building right now.\nAbout — education, experience, skills, and a downloadable CV."
   },
   {
     "objectID": "projects.html",
     "href": "projects.html",
     "title": "Projects",
     "section": "",
-    "text": "A running list of things I am building.\n\nいま作っているものの一覧です。\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nVisualizing Resonant Modes with Time-Averaged ESPI\n\n\n\nExperimental physics\n\nOptics\n\nVibration\n\nLabVIEW\n\n\n\nSummer 2025 research at Whitman College — imaging the vibration modes of a metal hemisphere, a viola, and a drumhead with electronic speckle pattern interferometry.\n\n\n\nAug 4, 2025\n\n\n\n\n\n\nNo matching items"
+    "text": "A running list of things I am building.\n\n\n\n\n\n\n\n\n\n\n\n\n\n時間平均 ESPI による共振モードの可視化\n\n\n\n実験物理\n\n光学\n\n振動\n\nLabVIEW\n\n\n\n2025 年夏、Whitman College での研究。電子スペックルパターン干渉法で金属半球・ヴィオラ・ドラムヘッドの振動モードを撮像。\n\n\n\nAug 4, 2025\n\n\n\n\n\n\n\n\n\n\nVisualizing Resonant Modes with Time-Averaged ESPI\n\n\n\nExperimental physics\n\nOptics\n\nVibration\n\nLabVIEW\n\n\n\nSummer 2025 research at Whitman College — imaging the vibration modes of a metal hemisphere, a viola, and a drumhead with electronic speckle pattern interferometry.\n\n\n\nAug 4, 2025\n\n\n\n\n\n\nNo matching items"
+  },
+  {
+    "objectID": "ja/projects.html",
+    "href": "ja/projects.html",
+    "title": "プロジェクト",
+    "section": "",
+    "text": "いま作っているものの一覧です。\n\n\n\n\n\n\n\n\n\n\n\n\n\n時間平均 ESPI による共振モードの可視化\n\n\n\n実験物理\n\n光学\n\n振動\n\nLabVIEW\n\n\n\n2025 年夏、Whitman College での研究。電子スペックルパターン干渉法で金属半球・ヴィオラ・ドラムヘッドの振動モードを撮像。\n\n\n\n2025/08/04\n\n\n\n\n\n\n一致なし"
+  },
+  {
+    "objectID": "ja/about.html",
+    "href": "ja/about.html",
+    "title": "プロフィール",
+    "section": "",
+    "text": "CV をダウンロード（PDF・英語）"
+  },
+  {
+    "objectID": "ja/about.html#経歴",
+    "href": "ja/about.html#経歴",
+    "title": "プロフィール",
+    "section": "経歴",
+    "text": "経歴\nワシントン大学セントルイス校で機械工学（学士・修士）を学んでいます。前所属の Whitman College では物理学を専攻しました。光干渉計測や振動解析といった実験物理に加え、 企業でのソフトウェア開発やビジネス分析の経験があります。"
+  },
+  {
+    "objectID": "ja/about.html#学歴",
+    "href": "ja/about.html#学歴",
+    "title": "プロフィール",
+    "section": "学歴",
+    "text": "学歴\n\n\n\n\n\n\n\n期間\n学位・学校\n\n\n\n\n2029 年 5 月 修了予定\n機械工学修士（M.S.）、ワシントン大学セントルイス校\n\n\n2028 年 5 月 卒業予定\n機械工学学士（B.S.）、統計学副専攻、ワシントン大学セントルイス校\n\n\n2023–2026\n物理学学士（B.A.）、経済学副専攻、Whitman College（ワシントン州ワラワラ）（学位授与は 2028 年 5 月予定、GPA 3.81/4.0、magna cum laude）"
+  },
+  {
+    "objectID": "ja/about.html#職歴",
+    "href": "ja/about.html#職歴",
+    "title": "プロフィール",
+    "section": "職歴",
+    "text": "職歴\n\n事業開発・分析インターン — CADDi Inc.\n東京 · 2026 年夏\n\n製造業におけるボトルネック（サプライチェーン、部門間のコミュニケーション不全、 それに伴う資源と時間の浪費）を分析。\nコスト・収益分析を含む新規事業計画を立案し、経営陣にプレゼンテーション。\n\n\n\nソフトウェアエンジニアインターン — GA Technologies\n東京 · 2026 年夏\n\nM&A プロセスを支援するソフトウェアで、新規プロジェクト 3 件の開発を担当。 日々のフィードバックをもとにデバッグを行う。\nRuby・R・Python でコスト分析・顧客分析モデルのプロトタイプを作成。\n\n\n\nESPI 研究室 リサーチアシスタント — Whitman College\nワシントン州ワラワラ · 2025 年夏\n\n波の干渉を利用して、楽器の微小振動を解析。\nピエゾ素子付きミラーの最適な振動周波数・振幅を計算し、研究室の ESPI（電子スペックルパターン干渉法）装置を最適化。\nLabVIEW で 1,000 点以上のデータと画像を処理し、理論予測と実験結果を比較。 ヴィオラやピアノなどの共振周波数と振動モードを特定。\n誤差解析と結論をまとめた 10 ページの技術レポートを執筆し、成果を発表。\n\n\n\n日本語チューター — Whitman College\nワシントン州ワラワラ · 2024 年 9 月 – 2026 年 5 月\n\n20 名以上の学生に、日本語の会話練習と文法の直感的な理解をサポート。\n文化交流イベントに参加し、姉妹都市の高校交流プログラムでボランティア。"
+  },
+  {
+    "objectID": "ja/about.html#リーダーシップ",
+    "href": "ja/about.html#リーダーシップ",
+    "title": "プロフィール",
+    "section": "リーダーシップ",
+    "text": "リーダーシップ\n\n男子サッカー部 — Whitman College\nワシントン州ワラワラ · 2023 年 9 月 – 2025 年 11 月\n\nNCAA Division III のサッカー部でプレー。週 20 時間以上の練習・遠征・試合と学業を両立。\n2025/26 シーズンに Northwest Conference で優勝し、NCAA D3 全国大会に出場。"
+  },
+  {
+    "objectID": "ja/about.html#スキル",
+    "href": "ja/about.html#スキル",
+    "title": "プロフィール",
+    "section": "スキル",
+    "text": "スキル\n\nプログラミング・ソフトウェア: Python, R, Ruby, LabVIEW, NI MAX, Microsoft Office\n実験（物理）: 干渉計測（ESPI）、レーザーアライメント、光学系の最適化、音響加振、 回路設計・組立、オシロスコープ\n実験（化学）: 基礎的なウェットケミストリー、滴定\n言語: 日本語（ネイティブ）、英語（ビジネス）、ドイツ語（初級）"
+  },
+  {
+    "objectID": "ja/about.html#関心分野",
+    "href": "ja/about.html#関心分野",
+    "title": "プロフィール",
+    "section": "関心分野",
+    "text": "関心分野\n機械工学、材料工学、財務分析、事業運営。"
+  },
+  {
+    "objectID": "ja/about.html#連絡先",
+    "href": "ja/about.html#連絡先",
+    "title": "プロフィール",
+    "section": "連絡先",
+    "text": "連絡先\n\nメール: hikida@wustl.edu\nGitHub: takahiro-h16\nLinkedIn: takahiro-hikida-92223135a"
   },
   {
     "objectID": "about.html",
@@ -102,42 +200,35 @@
     "href": "about.html#background",
     "title": "About",
     "section": "Background",
-    "text": "Background\nI am a mechanical engineering student at Washington University in St. Louis (B.S. and M.S.), coming from a physics background at Whitman College. My experience spans experimental physics, optical interferometry and vibration analysis, as well as software engineering and business analysis in industry.\n\nワシントン大学セントルイス校で機械工学（学士・修士）を学んでいます。前所属の Whitman College では物理学を専攻しました。光干渉計測や振動解析といった実験物理に加え、 企業でのソフトウェア開発やビジネス分析の経験があります。"
-  },
-  {
-    "objectID": "about.html#education",
-    "href": "about.html#education",
-    "title": "About",
-    "section": "Education",
-    "text": "Education\n\n\n\n\n\n\n\nPeriod\nDegree / Institution\n\n\n\n\nExpected May 2029\nM.S. in Mechanical Engineering, Washington University in St. Louis\n\n\nExpected May 2028\nB.S. in Mechanical Engineering, minor in Statistics, Washington University in St. Louis\n\n\n2023–2026\nB.A. in Physics, minor in Economics, Whitman College, Walla Walla, WA (degree conferral expected May 2028; GPA 3.81/4.0, magna cum laude)"
+    "text": "Background\nI am a mechanical engineering student at Washington University in St. Louis (B.S. and M.S.), coming from a physics background at Whitman College. My experience spans experimental physics, optical interferometry and vibration analysis, as well as software engineering and business analysis in industry.\n&lt;&lt;&lt;&lt;&lt;&lt;&lt; HEAD ::: {.ja} ワシントン大学セントルイス校で機械工学（学士・修士）を学んでいます。前所属の Whitman College では物理学を専攻しました。光干渉計測や振動解析といった実験物理に加え、 企業でのソフトウェア開発やビジネス分析の経験があります。 :::\n======= &gt;&gt;&gt;&gt;&gt;&gt;&gt; 66efc66 (Split site into English and Japanese pages with a language switch) ## Education\n\n\n\n\n\n\n\nPeriod\nDegree / Institution\n\n\n\n\nExpected May 2029\nM.S. in Mechanical Engineering, Washington University in St. Louis\n\n\nExpected May 2028\nB.S. in Mechanical Engineering, minor in Statistics, Washington University in St. Louis\n\n\n2023–2026\nB.A. in Physics, minor in Economics, Whitman College, Walla Walla, WA (degree conferral expected May 2028; GPA 3.81/4.0, magna cum laude)"
   },
   {
     "objectID": "about.html#experience",
     "href": "about.html#experience",
     "title": "About",
     "section": "Experience",
-    "text": "Experience\n\nBusiness Development and Analysis Intern — CADDi Inc.\nTokyo, Japan · Summer 2026\n\nAnalyzed bottlenecks in the manufacturing industry — supply chains, miscommunication between sectors, and the resulting waste of resources and time.\nDesigned a new business plan, including cost and revenue analysis, and presented it to the company’s management.\n\n\n\n製造業におけるボトルネック（サプライチェーン、部門間のコミュニケーション不全、 それに伴う資源と時間の浪費）を分析。\nコスト・収益分析を含む新規事業計画を立案し、経営陣にプレゼンテーション。\n\n\n\n\nSoftware Engineer Intern — GA Technologies\nTokyo, Japan · Summer 2026\n\nCoded 3 new projects for software supporting M&A processes; debugged code based on daily feedback.\nPrototyped cost and customer analysis models in Ruby, R, and Python.\n\n\n\nM&A プロセスを支援するソフトウェアで、新規プロジェクト 3 件の開発を担当。 日々のフィードバックをもとにデバッグを行う。\nRuby・R・Python でコスト分析・顧客分析モデルのプロトタイプを作成。\n\n\n\n\nESPI Lab Research Assistant — Whitman College\nWalla Walla, WA · Summer 2025\n\nUsed wave interference to analyze microscopic vibrations of acoustic instruments.\nOptimized the lab’s ESPI (Electronic Speckle Pattern Interferometry) setup by calculating the optimal oscillation frequency and amplitude of a piezo-attached mirror.\nProcessed 1,000+ data points and images in LabVIEW, comparing theoretical predictions with experimental results; identified resonance frequencies and vibration mode patterns of instruments such as violas and pianos.\nAuthored a 10-page technical report with error analysis and conclusions, and presented the findings.\n\n\n\n波の干渉を利用して、楽器の微小振動を解析。\nピエゾ素子付きミラーの最適な振動周波数・振幅を計算し、研究室の ESPI（電子スペックルパターン干渉法）装置を最適化。\nLabVIEW で 1,000 点以上のデータと画像を処理し、理論予測と実験結果を比較。 ヴィオラやピアノなどの共振周波数と振動モードを特定。\n誤差解析と結論をまとめた 10 ページの技術レポートを執筆し、成果を発表。\n\n\n\n\nJapanese Tutor — Whitman College\nWalla Walla, WA · 09/2024 – 05/2026\n\nTutored 20+ students in spoken Japanese and in building an intuitive understanding of complex grammar.\nTook part in cultural exchange events, volunteering in a sister-city high school exchange program.\n\n\n\n20 名以上の学生に、日本語の会話練習と文法の直感的な理解をサポート。\n文化交流イベントに参加し、姉妹都市の高校交流プログラムでボランティア。"
+    "text": "Experience\n\nBusiness Development and Analysis Intern — CADDi Inc.\nTokyo, Japan · Summer 2026\n\nAnalyzed bottlenecks in the manufacturing industry — supply chains, miscommunication between sectors, and the resulting waste of resources and time.\nDesigned a new business plan, including cost and revenue analysis, and presented it to the company’s management.\n\n\n\nSoftware Engineer Intern — GA Technologies\nTokyo, Japan · Summer 2026\n\nCoded 3 new projects for software supporting M&A processes; debugged code based on daily feedback.\nPrototyped cost and customer analysis models in Ruby, R, and Python.\n\n\n\nESPI Lab Research Assistant — Whitman College\nWalla Walla, WA · Summer 2025\n\nUsed wave interference to analyze microscopic vibrations of acoustic instruments.\nOptimized the lab’s ESPI (Electronic Speckle Pattern Interferometry) setup by calculating the optimal oscillation frequency and amplitude of a piezo-attached mirror.\nProcessed 1,000+ data points and images in LabVIEW, comparing theoretical predictions with experimental results; identified resonance frequencies and vibration mode patterns of instruments such as violas and pianos.\nAuthored a 10-page technical report with error analysis and conclusions, and presented the findings.\n\n\n\nJapanese Tutor — Whitman College\nWalla Walla, WA · 09/2024 – 05/2026\n\nTutored 20+ students in spoken Japanese and in building an intuitive understanding of complex grammar.\nTook part in cultural exchange events, volunteering in a sister-city high school exchange program."
   },
   {
     "objectID": "about.html#leadership",
     "href": "about.html#leadership",
     "title": "About",
     "section": "Leadership",
-    "text": "Leadership\n\nMen’s Soccer — Whitman College\nWalla Walla, WA · 09/2023 – 11/2025\n\nPlayed NCAA Division III varsity soccer, balancing 20+ hours per week of practice, travel, and games with a full academic course load.\nWon the Northwest Conference and qualified for the NCAA D3 Men’s Soccer National Tournament in the 2025/26 season.\n\n\n\nNCAA Division III のサッカー部でプレー。週 20 時間以上の練習・遠征・試合と学業を両立。\n2025/26 シーズンに Northwest Conference で優勝し、NCAA D3 全国大会に出場。"
+    "text": "Leadership\n\nMen’s Soccer — Whitman College\nWalla Walla, WA · 09/2023 – 11/2025\n\nPlayed NCAA Division III varsity soccer, balancing 20+ hours per week of practice, travel, and games with a full academic course load.\nWon the Northwest Conference and qualified for the NCAA D3 Men’s Soccer National Tournament in the 2025/26 season."
   },
   {
     "objectID": "about.html#skills",
     "href": "about.html#skills",
     "title": "About",
     "section": "Skills",
-    "text": "Skills\n\nProgramming & software: Python, R, Ruby, LabVIEW, NI MAX, Microsoft Office Suite\nLaboratory — physics: interferometry (ESPI), laser alignment, optical setup optimization, acoustic excitation, circuit design and assembly, oscilloscope operation\nLaboratory — chemistry: basic wet chemistry, titration techniques\nLanguages: Japanese (native), English (professional), German (elementary)\n\n\n\nプログラミング・ソフトウェア: Python, R, Ruby, LabVIEW, NI MAX, Microsoft Office\n実験（物理）: 干渉計測（ESPI）、レーザーアライメント、光学系の最適化、音響加振、 回路設計・組立、オシロスコープ\n実験（化学）: 基礎的なウェットケミストリー、滴定\n言語: 日本語（ネイティブ）、英語（ビジネス）、ドイツ語（初級）"
+    "text": "Skills\n\nProgramming & software: Python, R, Ruby, LabVIEW, NI MAX, Microsoft Office Suite\nLaboratory — physics: interferometry (ESPI), laser alignment, optical setup optimization, acoustic excitation, circuit design and assembly, oscilloscope operation\nLaboratory — chemistry: basic wet chemistry, titration techniques\nLanguages: Japanese (native), English (professional), German (elementary)"
   },
   {
     "objectID": "about.html#interests",
     "href": "about.html#interests",
     "title": "About",
     "section": "Interests",
-    "text": "Interests\nMechanical engineering, materials engineering, financial analysis, and business operations.\n\n機械工学、材料工学、財務分析、事業運営。"
+    "text": "Interests\nMechanical engineering, materials engineering, financial analysis, and business operations."
   },
   {
     "objectID": "about.html#contact",

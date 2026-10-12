@@ -2,7 +2,7 @@
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
 
 <meta charset="utf-8">
-<meta name="generator" content="quarto-1.10.18">
+<meta name="generator" content="quarto-1.10.19">
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
@@ -79,7 +79,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <script src="site_libs/quarto-html/tippy.umd.min.js"></script>
 <script src="site_libs/quarto-html/anchor.min.js"></script>
 <link href="site_libs/quarto-html/tippy.css" rel="stylesheet">
-<link href="site_libs/quarto-html/quarto-syntax-highlighting-64a204ab8560d761af7679ceaba22944.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<link href="site_libs/quarto-html/quarto-syntax-highlighting-bf27225e3a48a9273f3daa8f8e829971.css" rel="stylesheet" id="quarto-text-highlighting-styles">
 <script src="site_libs/bootstrap/bootstrap.min.js"></script>
 <link href="site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
 <link href="site_libs/bootstrap/bootstrap-bd2fbcf52716fee708c0453c73363b80.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
@@ -139,6 +139,43 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
     }
   })
   </script>
+<script>
+// EN <-> JA switch. Every page at <path> has a Japanese twin at ja/<path>.
+// The navbar is shared by both languages, so on Japanese pages its links and
+// labels are rewritten here to point at the ja/ versions.
+document.addEventListener("DOMContentLoaded", function () {
+  var brand = document.querySelector(".navbar-brand");
+  if (!brand) return;
+  var root = new URL(brand.getAttribute("href"), location.href).pathname
+    .replace(/index\.html$/, "");
+  var rel = location.pathname.slice(root.length) || "index.html";
+  if (rel.endsWith("/")) rel += "index.html";
+  var isJa = rel.startsWith("ja/");
+
+  var toggle = document.querySelector(".navbar .nav-link .bi-translate");
+  if (toggle) {
+    toggle = toggle.closest("a");
+    toggle.href = root + (isJa ? rel.slice(3) : "ja/" + rel) + location.hash;
+    toggle.querySelector(".menu-text").textContent = isJa ? "English" : "日本語";
+    toggle.setAttribute("lang", isJa ? "en" : "ja");
+  }
+
+  if (!isJa) return;
+  var labels = { Home: "ホーム", Projects: "プロジェクト", About: "プロフィール" };
+  document.querySelectorAll(".navbar-brand, .navbar .nav-link").forEach(function (a) {
+    if (a === toggle || !a.getAttribute("href")) return;
+    var url = new URL(a.href, location.href);
+    if (url.origin !== location.origin || !url.pathname.startsWith(root)) return;
+    var path = url.pathname.slice(root.length) || "index.html";
+    if (path.startsWith("ja/") || !/(\.html|\/)$/.test(path)) return;
+    a.href = root + "ja/" + path;
+    var text = a.querySelector(".menu-text");
+    if (text && labels[text.textContent.trim()]) {
+      text.textContent = labels[text.textContent.trim()];
+    }
+  });
+});
+</script>
 
   <script src="https://cdnjs.cloudflare.com/polyfill/v3/polyfill.min.js?features=es6"></script>
   <script defer="" src="https://cdn.jsdelivr.net/npm/mathjax@4/tex-chtml.js" type="text/javascript"></script>
@@ -204,6 +241,11 @@ window.Quarto = {
   </li>  
 </ul>
             <ul class="navbar-nav navbar-nav-scroll ms-auto">
+  <li class="nav-item">
+    <a class="nav-link" href="./ja/index.html"> <i class="bi bi-translate" role="img" aria-label="Switch language / 言語を切り替え">
+</i> 
+<span class="menu-text">日本語</span></a>
+  </li>  
   <li class="nav-item compact">
     <a class="nav-link" href="https://github.com/takahiro-h16"> <i class="bi bi-github" role="img" aria-label="GitHub">
 </i> 
@@ -221,7 +263,7 @@ window.Quarto = {
 <!-- sidebar -->
 <!-- margin-sidebar -->
     <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
-    <h5 class="quarto-listing-category-title">Categories</h5><div class="quarto-listing-category category-default"><div class="category" data-category="">All <span class="quarto-category-count">(1)</span></div><div class="category" data-category="RXhwZXJpbWVudGFsJTIwcGh5c2ljcw==">Experimental physics <span class="quarto-category-count">(1)</span></div><div class="category" data-category="TGFiVklFVw==">LabVIEW <span class="quarto-category-count">(1)</span></div><div class="category" data-category="T3B0aWNz">Optics <span class="quarto-category-count">(1)</span></div><div class="category" data-category="VmlicmF0aW9u">Vibration <span class="quarto-category-count">(1)</span></div></div></div>
+    <h5 class="quarto-listing-category-title">Categories</h5><div class="quarto-listing-category category-default"><div class="category" data-category="">All <span class="quarto-category-count">(2)</span></div><div class="category" data-category="RXhwZXJpbWVudGFsJTIwcGh5c2ljcw==">Experimental physics <span class="quarto-category-count">(1)</span></div><div class="category" data-category="TGFiVklFVw==">LabVIEW <span class="quarto-category-count">(2)</span></div><div class="category" data-category="T3B0aWNz">Optics <span class="quarto-category-count">(1)</span></div><div class="category" data-category="VmlicmF0aW9u">Vibration <span class="quarto-category-count">(1)</span></div><div class="category" data-category="JUU1JTg1JTg5JUU1JUFEJUE2">光学 <span class="quarto-category-count">(1)</span></div><div class="category" data-category="JUU1JUFFJTlGJUU5JUE4JTkzJUU3JTg5JUE5JUU3JTkwJTg2">実験物理 <span class="quarto-category-count">(1)</span></div><div class="category" data-category="JUU2JThDJUFGJUU1JThCJTk1">振動 <span class="quarto-category-count">(1)</span></div></div></div>
 <!-- main -->
 <main class="content" id="quarto-document-content">
 
@@ -245,9 +287,6 @@ window.Quarto = {
 
 
 <p>A running list of things I am building.</p>
-<div class="ja">
-<p>いま作っているものの一覧です。</p>
-</div>
 
 
 
@@ -256,7 +295,36 @@ window.Quarto = {
 
 <div class="quarto-listing quarto-listing-container-grid" id="listing-listing">
 <div class="list grid quarto-listing-cols-2">
-<div class="g-col-1" data-index="0" data-categories="RXhwZXJpbWVudGFsJTIwcGh5c2ljcyUyQ09wdGljcyUyQ1ZpYnJhdGlvbiUyQ0xhYlZJRVc=" data-listing-date-sort="1754265600000" data-listing-file-modified-sort="1791129712641" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="14" data-listing-word-count-sort="2601">
+<div class="g-col-1" data-index="0" data-categories="JUU1JUFFJTlGJUU5JUE4JTkzJUU3JTg5JUE5JUU3JTkwJTg2JTJDJUU1JTg1JTg5JUU1JUFEJUE2JTJDJUU2JThDJUFGJUU1JThCJTk1JTJDTGFiVklFVw==" data-listing-date-sort="1754265600000" data-listing-file-modified-sort="1791765148450" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1" data-listing-word-count-sort="51">
+<a href="./ja/projects/espi-resonant-modes.html" class="quarto-grid-link">
+<div class="quarto-grid-item card h-100 card-left">
+<div class="card-body post-contents">
+<h5 class="no-anchor card-title listing-title">
+時間平均 ESPI による共振モードの可視化
+</h5>
+<div class="listing-categories">
+
+<div class="listing-category" onclick="window.quartoListingCategory('JUU1JUFFJTlGJUU5JUE4JTkzJUU3JTg5JUE5JUU3JTkwJTg2'); return false;">実験物理</div>
+
+<div class="listing-category" onclick="window.quartoListingCategory('JUU1JTg1JTg5JUU1JUFEJUE2'); return false;">光学</div>
+
+<div class="listing-category" onclick="window.quartoListingCategory('JUU2JThDJUFGJUU1JThCJTk1'); return false;">振動</div>
+
+<div class="listing-category" onclick="window.quartoListingCategory('TGFiVklFVw=='); return false;">LabVIEW</div>
+
+</div>
+<div class="card-text listing-description delink">
+<p>2025 年夏、Whitman College での研究。電子スペックルパターン干渉法で金属半球・ヴィオラ・ドラムヘッドの振動モードを撮像。</p>
+</div>
+<div class="card-attribution card-text-small end">
+<div class="listing-date">
+Aug 4, 2025
+</div>
+</div>
+</div>
+</div></a>
+</div>
+<div class="g-col-1" data-index="1" data-categories="RXhwZXJpbWVudGFsJTIwcGh5c2ljcyUyQ09wdGljcyUyQ1ZpYnJhdGlvbiUyQ0xhYlZJRVc=" data-listing-date-sort="1754265600000" data-listing-file-modified-sort="1791765148450" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="13" data-listing-word-count-sort="2567">
 <a href="./projects/espi-resonant-modes.html" class="quarto-grid-link">
 <div class="quarto-grid-item card h-100 card-left">
 <div class="card-body post-contents">
@@ -754,11 +822,7 @@ Aug 4, 2025
 <span id="cb1-13"><a href="#cb1-13" aria-hidden="true" tabindex="-1"></a><span class="co">  filter-ui: false</span></span>
 <span id="cb1-14"><a href="#cb1-14" aria-hidden="true" tabindex="-1"></a><span class="co">---</span></span>
 <span id="cb1-15"><a href="#cb1-15" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-16"><a href="#cb1-16" aria-hidden="true" tabindex="-1"></a>A running list of things I am building.</span>
-<span id="cb1-17"><a href="#cb1-17" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-18"><a href="#cb1-18" aria-hidden="true" tabindex="-1"></a>::: {.ja}</span>
-<span id="cb1-19"><a href="#cb1-19" aria-hidden="true" tabindex="-1"></a>いま作っているものの一覧です。</span>
-<span id="cb1-20"><a href="#cb1-20" aria-hidden="true" tabindex="-1"></a>:::</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button" data-in-quarto-modal=""><i class="bi"></i></button></div>
+<span id="cb1-16"><a href="#cb1-16" aria-hidden="true" tabindex="-1"></a>A running list of things I am building.</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button" data-in-quarto-modal=""><i class="bi"></i></button></div>
 </div></div></div></div></div>
 </div> <!-- /content -->
 <footer class="footer">
